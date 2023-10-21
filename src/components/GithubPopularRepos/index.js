@@ -58,7 +58,7 @@ const GithubPopularRepos = () => {
 
   useEffect(() => {
     getRepositories()
-  }, [])
+  }, [activeLanguageFilterId])
 
   const renderLoadingView = () => (
     <div data-testid="loader">
